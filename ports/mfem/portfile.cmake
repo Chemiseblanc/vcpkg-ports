@@ -7,6 +7,7 @@ vcpkg_from_github(
   PATCHES
     fix-cmake-install.patch
     fix-openmp-msvc.patch
+    fix-dep-linkage.patch
     remove_source_install_dir.patch
 )
 
@@ -42,7 +43,6 @@ vcpkg_check_features(
         "caliper" MFEM_USE_CALIPER
         "algoim" MFEM_USE_ALGOIM
         "adios2" MFEM_USE_ADIOS2
-        "cpardiso" MFEM_USE_CPARDISO
         "parelag" MFEM_USE_PARELAG
         "enzyme" MFEM_USE_ENZYME
 
