@@ -18,6 +18,7 @@ vcpkg_check_features(
         "openmp" MFEM_USE_OPENMP
         "mpi" MFEM_USE_MPI
         "metis" MFEM_USE_METIS
+        "metis" MFEM_USE_METIS_5
         "zlib" MFEM_USE_ZLIB
         "ginkgo" MFEM_USE_GINKGO
         "lapack" MFEM_USE_LAPACK
