@@ -6,6 +6,7 @@ vcpkg_from_github(
   HEAD_REF main
   PATCHES
     fix-cmake-install.patch
+    remove_source_install_dir.patch
 )
 
 vcpkg_cmake_configure(
@@ -17,4 +18,7 @@ vcpkg_cmake_config_fixup()
 file(
   INSTALL "${SOURCE_PATH}/LICENSE"
   DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}"
-  RENAME copyright)
+  RENAME copyright
+)
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
