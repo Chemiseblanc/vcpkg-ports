@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 769f2bdc1..d7e073361 100644
+index 769f2bdc1..2ba963e97 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -274,6 +274,7 @@ endif()
@@ -10,11 +10,13 @@ index 769f2bdc1..d7e073361 100644
  endif()
  
  if (MFEM_USE_GINKGO)
-@@ -364,6 +365,7 @@ endif()
+@@ -363,7 +364,8 @@ endif()
+ 
  # NetCDF
  if (MFEM_USE_NETCDF)
-   find_package(NetCDF REQUIRED)
-+  set(NETCDF_LIBRARIES netCDF::netcdf)
+-  find_package(NetCDF REQUIRED)
++  find_package(netCDF REQUIRED)
++  set(NETCDF_LIBRARIES ${netCDF_LIBRARIES})
  endif()
  
  # MPFR
