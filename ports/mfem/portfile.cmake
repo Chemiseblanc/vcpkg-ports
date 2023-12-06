@@ -6,6 +6,7 @@ vcpkg_from_github(
   HEAD_REF main
   PATCHES
     fix-cmake-install.patch
+    fix-openmp-msvc.patch
     remove_source_install_dir.patch
 )
 
