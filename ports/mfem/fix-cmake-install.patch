@@ -1,0 +1,26 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 2df8fe2d8..02803dd92 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -728,16 +728,17 @@ add_subdirectory(doc)
+ #-------------------------------------------------------------------------------
+ # Installation
+ #-------------------------------------------------------------------------------
++include(GNUInstallDirs)
+ 
+ message(STATUS "CMAKE_INSTALL_PREFIX = ${CMAKE_INSTALL_PREFIX}")
+-set(INSTALL_INCLUDE_DIR include
++set(INSTALL_INCLUDE_DIR ${CMAKE_INSTALL_INCLUDEDIR}
+   CACHE PATH "Relative path for installing header files.")
+-set(INSTALL_BIN_DIR bin
++set(INSTALL_BIN_DIR ${CMAKE_INSTALL_BINDIR}
+   CACHE PATH "Relative path for installing the binaries.")
+-set(INSTALL_LIB_DIR lib
++set(INSTALL_LIB_DIR ${CMAKE_INSTALL_LIBDIR}
+   CACHE PATH "Relative path for installing the library.")
+ # other options: "share/mfem/cmake", "lib/mfem/cmake"
+-set(INSTALL_CMAKE_DIR lib/cmake/mfem
++set(INSTALL_CMAKE_DIR ${CMAKE_INSTALL_DATAROOTDIR}/cmake/mfem
+   CACHE PATH "Relative path for installing cmake config files.")
+ 
+ target_include_directories(mfem BEFORE
