@@ -1,7 +1,7 @@
 {
   "name": "mfem",
   "version": "4.6",
-  "port-version": 3,
+  "port-version": 4,
   "description": "MFEM is a free, lightweight, scalable C++ library for finite element methods.",
   "homepage": "https://mfem.org",
   "dependencies": [
@@ -13,5 +13,77 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ]
+  ],
+  "features": {
+    "cuda": {
+      "description": "Enable CUDA support",
+      "dependencies": [
+        "cuda"
+      ]
+    },
+    "gnutls": {
+      "description": "Enable GnuTLS support",
+      "dependencies": [
+        "libgnutls"
+      ]
+    },
+    "lapack": {
+      "description": "Enable LAPACK support",
+      "dependencies": [
+        "lapack"
+      ]
+    },
+    "libunwind": {
+      "description": "Enable libunwind support",
+      "dependencies": [
+        "libunwind"
+      ]
+    },
+    "metis": {
+      "description": "Enable METIS support",
+      "dependencies": [
+        "metis"
+      ]
+    },
+    "mpfr": {
+      "description": "Enable MPFR support",
+      "dependencies": [
+        "mpfr"
+      ]
+    },
+    "mpi": {
+      "description": "Enable MPI support",
+      "dependencies": [
+        "hypre",
+        "mpi"
+      ]
+    },
+    "netcdf": {
+      "description": "Enable NetCDF support",
+      "dependencies": [
+        "netcdf-cxx4"
+      ]
+    },
+    "openmp": {
+      "description": "Enable OpenMP support"
+    },
+    "suitesparse": {
+      "description": "Enable SuiteSparse support",
+      "dependencies": [
+        "suitesparse"
+      ]
+    },
+    "sundials": {
+      "description": "Enable SUNDIALS support",
+      "dependencies": [
+        "sundials"
+      ]
+    },
+    "zlib": {
+      "description": "Enable ZLIB support",
+      "dependencies": [
+        "zlib"
+      ]
+    }
+  }
 }
