@@ -54,6 +54,9 @@ vcpkg_check_features(
         "pumi" MFEM_USE_PUMI
 )
 
+file(GLOB FIND_MODULES "${SOURCE_PATH}/config/cmake/modules/Find*.cmake")
+file(REMOVE ${FIND_MODULES})
+
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
   OPTIONS ${FEATURE_OPTIONS}
@@ -68,3 +71,4 @@ file(
 )
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
+
