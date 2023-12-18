@@ -16,7 +16,7 @@ index 769f2bdc1..2ba963e97 100644
  if (MFEM_USE_NETCDF)
 -  find_package(NetCDF REQUIRED)
 +  find_package(netCDF REQUIRED)
-+  set(NETCDF_LIBRARIES ${netCDF_LIBRARIES})
++  set(NETCDF_LIBRARIES netCDF::netcdf)
  endif()
  
  # MPFR
