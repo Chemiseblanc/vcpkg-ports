@@ -16,7 +16,7 @@ index 769f2bdc1..e03e8ebc6 100644
    find_package(NetCDF REQUIRED)
 +    find_package(netCDF REQUIRED)
 +  set(NETCDF_FOUND TRUE)
-+    set(NETCDF_LIBRARIES netcdf)
++    set(NETCDF_LIBRARIES netCDF::netcdf)
  endif()
  
  # MPFR
