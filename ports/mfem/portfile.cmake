@@ -8,7 +8,6 @@ vcpkg_from_github(
     fix-cmake-install.patch
     fix-openmp-msvc.patch
     fix-dep-linkage.patch
-    fix-mpfr.patch
     remove_source_install_dir.patch
 )
 
