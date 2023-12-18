@@ -23,6 +23,7 @@
     },
     "gnutls": {
       "description": "Enable GnuTLS support",
+      "supports": "!windows | mingw",
       "dependencies": [
         "libgnutls"
       ]
@@ -35,6 +36,7 @@
     },
     "libunwind": {
       "description": "Enable libunwind support",
+      "supports": "linux",
       "dependencies": [
         "libunwind"
       ]
