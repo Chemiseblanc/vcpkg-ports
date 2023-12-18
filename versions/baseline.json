@@ -2,7 +2,7 @@
   "default": {
     "mfem": {
       "baseline": "4.6",
-      "port-version": 11
+      "port-version": 12
     }
   }
 }
