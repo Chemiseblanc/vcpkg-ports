@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 769f2bdc1..74aa5bce9 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -368,7 +368,9 @@ endif()
+ 
+ # MPFR
+ if (MFEM_USE_MPFR)
+-  find_package(MPFR REQUIRED)
++  find_package(PkgConfig)
++  pkg_check_modules(mpfr REQUIRED IMPORTED_TARGET mpfr)
++  add_library(MPFR ALIAS PkgConfig::mpfr)
+ endif()
+ 
+ if (MFEM_USE_CEED)
