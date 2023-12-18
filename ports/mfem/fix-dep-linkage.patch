@@ -15,6 +15,7 @@ index 769f2bdc1..7f71f3330 100644
  if (MFEM_USE_NETCDF)
    find_package(NetCDF REQUIRED)
 +    find_package(netCDF REQUIRED)
++    set(NETCDF_FOUND TRUE)
 +    set(NETCDF_LIBRARIES netcdf)
  endif()
  
@@ -23,6 +24,7 @@ index 769f2bdc1..7f71f3330 100644
 -  find_package(MPFR REQUIRED)
 +  find_package(PkgConfig)
 +  pkg_check_modules(mpfr REQUIRED IMPORTED_TARGET mpfr)
++  set(MPFR_FOUND TRUE)
 +  set(MPFR_LIBRARIES PkgConfig::mpfr)
  endif()
  
