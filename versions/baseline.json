@@ -5,8 +5,8 @@
       "port-version": 19
     },
     "sundials": {
-      "baseline": "6.2.0",
-      "port-version": 5
+      "baseline": "6.7.0",
+      "port-version": 6
     }
   }
 }
