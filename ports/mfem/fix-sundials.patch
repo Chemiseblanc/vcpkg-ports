@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 769f2bdc1..17a07ad44 100644
+index 769f2bdc1..39c7301dd 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -310,7 +310,7 @@ endif()
@@ -17,7 +17,7 @@ index 769f2bdc1..17a07ad44 100644
    find_package(SUNDIALS REQUIRED ${SUNDIALS_COMPONENTS})
 +  set(SUNDIALS_FOUND TRUE)
 +  set(SUNDIALS_LIBRARIES)
-+  foreach(COMP IN ${SUNDIALS_COMPONENTS})
++  foreach(COMP IN LISTS SUNDIALS_COMPONENTS)
 +      list(APPEND SUNDIALS_LIBRARIES "SUNDIALS::${COMP}")
 +  endforeach()
  endif()
