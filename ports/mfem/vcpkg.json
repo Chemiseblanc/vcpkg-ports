@@ -1,7 +1,7 @@
 {
   "name": "mfem",
   "version": "4.6",
-  "port-version": 21,
+  "port-version": 22,
   "description": "MFEM is a free, lightweight, scalable C++ library for finite element methods.",
   "homepage": "https://mfem.org",
   "dependencies": [

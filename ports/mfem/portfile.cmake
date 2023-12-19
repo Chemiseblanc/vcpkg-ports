@@ -8,7 +8,7 @@ vcpkg_from_github(
     fix-cmake-install.patch
     fix-openmp-msvc.patch
     fix-dep-linkage.patch
-    fix-sundials-components.patch
+    fix-sundials.patch
     remove_source_install_dir.patch
 )
 
