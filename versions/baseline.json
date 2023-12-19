@@ -3,6 +3,10 @@
     "mfem": {
       "baseline": "4.6",
       "port-version": 17
+    },
+    "sundials": {
+      "baseline": "6.2.0",
+      "port-version": 0
     }
   }
 }
