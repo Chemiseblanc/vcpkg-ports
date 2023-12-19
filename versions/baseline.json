@@ -2,7 +2,7 @@
   "default": {
     "mfem": {
       "baseline": "4.6",
-      "port-version": 17
+      "port-version": 18
     },
     "sundials": {
       "baseline": "6.2.0",
