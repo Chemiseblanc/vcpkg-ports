@@ -1,8 +1,8 @@
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO LLNL/sundials
-        REF e2f29c34f324829302037a1492db480be8828084
-        SHA512 9af9a5d7a44de1f2afbc35d8e2ec3d35a2d15f1b708be7a90bf849a0d0576fda6c73fae6b8954025805ac1ca25468558c02dcc2fd86b5767699518988817d4d8
+        REF v6.7.0
+        SHA512 aaeab8d907c6b7dfca86041401fdc1448f35f826
         HEAD_REF master
         PATCHES
         install-dlls-in-bin.patch
@@ -14,7 +14,7 @@ string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" SUN_BUILD_SHARED)
 vcpkg_check_features(
         OUT_FEATURE_OPTIONS FEATURE_OPTIONS
         FEATURES
-            "mpi" BUILD_MPI
+            "mpi" ENABLE_MPI
             "openmp" ENABLE_OPENMP
             "cuda" ENABLE_CUDA
             "hip" ENABLE_HIP
@@ -34,6 +34,8 @@ vcpkg_cmake_configure(
         -D_BUILD_EXAMPLES=OFF
         -DBUILD_STATIC_LIBS=${SUN_BUILD_STATIC}
         -DBUILD_SHARED_LIBS=${SUN_BUILD_SHARED}
+        -D_SHARED_LIB_SUFFIX=""
+        -D_STATIC_LIB_SUFFIX=""
         ${FEATURE_OPTIONS}
 )
 

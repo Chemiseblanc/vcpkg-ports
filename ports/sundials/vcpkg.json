@@ -1,7 +1,7 @@
 {
   "name": "sundials",
-  "version-semver": "6.2.0",
-  "port-version": 5,
+  "version-semver": "6.7.0",
+  "port-version": 6,
   "description": "SUNDIALS (SUite of Nonlinear and DIfferential/ALgebraic equation Solvers)",
   "homepage": "https://computation.llnl.gov/projects/sundials",
   "dependencies": [
@@ -13,14 +13,6 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ],
-  "default-features": [
-    "arkode",
-    "cvode",
-    "cvodes",
-    "ida",
-    "idas",
-    "kinsol"
   ],
   "features": {
     "arkode": {
