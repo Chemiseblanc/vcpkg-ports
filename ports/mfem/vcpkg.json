@@ -82,7 +82,6 @@
           "name": "sundials",
           "features": [
             "arkode",
-            "cvode",
             "cvodes",
             "kinsol"
           ]
