@@ -2,7 +2,7 @@ vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO LLNL/sundials
         REF v6.7.0
-        SHA512 0
+        SHA512 ad72a7d9ad3a650d5cb9fe825e79b6a3921944a0951c798616343cd36a8e8933c993783724afcf820a6283dc877226845ee43248472d769721822732541e4368
         HEAD_REF master
         PATCHES
         install-dlls-in-bin.patch
