@@ -14,18 +14,18 @@ string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" SUN_BUILD_SHARED)
 vcpkg_check_features(
         OUT_FEATURE_OPTIONS FEATURE_OPTIONS
         FEATURES
-            "mpi" ENABLE_MPI
+            "mpi" BUILD_MPI
             "openmp" ENABLE_OPENMP
             "cuda" ENABLE_CUDA
             "hip" ENABLE_HIP
             "lapack" ENABLE_LAPACK
-            "arkode" ENABLE_ARKODE
-            "cvode" ENABLE_CVODE
-            "cvodes" ENABLE_CVODES
-            "ida" ENABLE_IDA
-            "idas" ENABLE_IDAS
-            "kinsol" ENABLE_KINSOL
-            "cpodes" ENABLE_CPODES
+            "arkode" BUILD_ARKODE
+            "cvode" BUILD_CVODE
+            "cvodes" BUILD_CVODES
+            "ida" BUILD_IDA
+            "idas" BUILD_IDAS
+            "kinsol" BUILD_KINSOL
+            "cpodes" BUILD_CPODES
 )
 
 vcpkg_cmake_configure(
