@@ -13,5 +13,67 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ]
+  ],
+  "default-features": [
+    "arkode",
+    "cpodes",
+    "cvode",
+    "cvodes",
+    "ida",
+    "idas",
+    "kinsol"
+  ],
+  "features": {
+    "arkode": {
+      "description": "Enable ARKODE solver"
+    },
+    "cpodes": {
+      "description": "Enable CPODES solver"
+    },
+    "cuda": {
+      "description": "Enable CUDA support",
+      "dependencies": [
+        "cuda"
+      ]
+    },
+    "cvode": {
+      "description": "Enable CVODE solver"
+    },
+    "cvodes": {
+      "description": "Enable CVODES solver"
+    },
+    "hip": {
+      "description": "Enable HIP support",
+      "dependencies": [
+        "hip"
+      ]
+    },
+    "ida": {
+      "description": "Enable IDA solver"
+    },
+    "idas": {
+      "description": "Enable IDAS solver"
+    },
+    "kinsol": {
+      "description": "Enable KINSOL solver"
+    },
+    "lapack": {
+      "description": "Enable LAPACK support",
+      "dependencies": [
+        "lapack"
+      ]
+    },
+    "mpi": {
+      "description": "Enable MPI support",
+      "dependencies": [
+        "mpi"
+      ]
+    },
+    "openmp": {
+      "description": "Enable OpenMP support",
+      "dependencies": [
+        "openmp"
+      ]
+    }
+  }
 }
