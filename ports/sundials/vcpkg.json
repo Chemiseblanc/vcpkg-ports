@@ -1,7 +1,7 @@
 {
   "name": "sundials",
   "version-semver": "6.2.0",
-  "port-version": 4,
+  "port-version": 5,
   "description": "SUNDIALS (SUite of Nonlinear and DIfferential/ALgebraic equation Solvers)",
   "homepage": "https://computation.llnl.gov/projects/sundials",
   "dependencies": [
@@ -16,7 +16,6 @@
   ],
   "default-features": [
     "arkode",
-    "cpodes",
     "cvode",
     "cvodes",
     "ida",
