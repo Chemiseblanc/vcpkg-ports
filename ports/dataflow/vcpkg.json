@@ -1,7 +1,7 @@
 {
   "name": "dataflow",
   "version": "0.1",
-  "port-version": 3,
+  "port-version": 4,
   "dependencies": [
     "nlohmann-json",
     {
