@@ -2,7 +2,7 @@
   "default": {
     "dataflow": {
       "baseline": "0.1",
-      "port-version": 5
+      "port-version": 6
     },
     "mfem": {
       "baseline": "4.6",
