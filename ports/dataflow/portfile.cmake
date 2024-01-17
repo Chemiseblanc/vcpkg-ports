@@ -1,7 +1,7 @@
 vcpkg_from_git(
         OUT_SOURCE_PATH SOURCE_PATH
         URL https://github.com/Chemiseblanc/dataflow/
-        REF 9d9f64320254f270d57be9712f28c892ca2f61ce
+        REF 4a8d5a320aaab1dd3e591b0c9777a0a1e4221111
         HEAD_REF main
 )
 
@@ -14,6 +14,7 @@ vcpkg_cmake_install()
 vcpkg_cmake_config_fixup(
         CONFIG_PATH "share/cmake/dataflow"
 )
+vcpkg_copy_pdbs()
 
 
 file(
