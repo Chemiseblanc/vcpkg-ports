@@ -1,7 +1,7 @@
 vcpkg_from_git(
         OUT_SOURCE_PATH SOURCE_PATH
         URL https://github.com/Chemiseblanc/dataflow/
-        REF 37e898e26e464ad25c7c51b8df68b3328ded302a
+        REF dd3135ac4ece84466ae18a94126fffb1c81774bd
         HEAD_REF main
 )
 
